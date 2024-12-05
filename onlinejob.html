@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Job Platform</title>
+  <link rel="stylesheet" href="onlinejob.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><a href="#">Homepage</a></li>
+      <li><a href="#">Job Listings</a></li>
+      <li><a href="user.html">Users</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <h1>Online Job Platform</h1>
+
+  <form id="job-form">
+    <h2>Add New Job</h2>
+
+    <label for="job-title">Job Title</label>
+    <input type="text" id="job-title" name="job-title" required>
+
+    <label for="company">Company</label>
+    <input type="text" id="company" name="company" required>
+
+    <label for="location">Location</label>
+    <input type="text" id="location" name="location" required>
+
+    <label for="salary">Salary</label>
+    <input type="number" id="salary" name="salary">
+
+    <label for="job-type">Job Type</label>
+    <select id="job-type" name="job-type">
+      <option value="Full-Time">Full-Time</option>
+      <option value="Part-Time">Part-Time</option>
+      <option value="Freelance">Freelance</option>
+      <option value="Contract">Contract</option>
+    </select>
+
+    <label for="description">Description</label>
+    <textarea id="description" name="description" required></textarea>
+
+    <button type="submit">Add Job</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Job Title</th>
+        <th>Company</th>
+        <th>Location</th>
+        <th>Salary</th>
+        <th>Job Type</th>
+        <th>Description</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="job-list">
+      <!-- Job listings will be dynamically added here -->
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
